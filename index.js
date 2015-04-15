@@ -1,33 +1,12 @@
 'use strict';
 
-var vsprintf = require("sprintf-js").vsprintf;
+var Interpolator = require('./interpolator');
+var MODULE_NAME = 'sprintfInterpolator';
 
+angular
+  .module(MODULE_NAME)
+  .factory(MODULE_NAME, [function() {
+    return new Interpolator();
+  }]);
 
-var SprintfInterpolator = function () {
-  this.$locale = undefined;
-};
-
-
-SprintfInterpolator.prototype = {
-
-  setLocale: function(locale) {
-    this.$locale = locale;
-  },
-
-
-  getInterpolationIdentifier: function() {
-    return 'sprintf';
-  },
-
-
-  interpolate: function(string, interpolateParams) {
-    try {
-      return vsprintf(string, interpolateParams);
-    } catch (e) {
-      return string.replace(/%s|%d/gi, '');
-    }
-  }
-
-};
-
-module.exports = SprintfInterpolator;
+module.exports = MODULE_NAME;
