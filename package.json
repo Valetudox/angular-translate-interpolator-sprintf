@@ -1,0 +1,23 @@
+{
+  "name": "angular-translate-interpolator-sprintf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sprintf-js": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Valetudox/angular-translate-interpolator-sprintf.git"
+  },
+  "author": "Viktor Somodi <viktor.somodi@emarsys.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Valetudox/angular-translate-interpolator-sprintf/issues"
+  },
+  "homepage": "https://github.com/Valetudox/angular-translate-interpolator-sprintf"
+}
